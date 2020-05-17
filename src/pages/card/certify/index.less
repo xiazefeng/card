@@ -1,0 +1,24 @@
+
+@import '~antd/lib/style/themes/default.less';
+
+.information {
+    line-height: 22px;
+    background-color: #fafafa;
+    width: 500px;
+    height: 150px;
+    margin: 24px auto;
+    padding: 12px 0;
+    :global {
+      .ant-row:not(:last-child) {
+        margin-bottom: 0;
+      }
+    }
+    .label {
+      padding-right: 8px;
+      color: @heading-color;
+      text-align: right;
+      @media screen and (max-width: @screen-sm) {
+        text-align: left;
+      }
+    }
+  }

@@ -1,0 +1,63 @@
+@import '~@/pages/less/antMotionStyle.less';
+.customImage{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 100%;
+    :global{
+        .imageWrap{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            img{
+                object-fit: contain;
+                margin: 0 auto 20px;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+.customCardTitle{
+    padding: 10px 5px;
+    :global{
+        h3{
+            overflow: hidden;
+        }
+        p{
+            font-size: 0;
+            color: #333;
+            .product-name{
+                margin-bottom: 20px;
+                height: 18px;
+                line-height: 18px;
+                overflow: hidden;
+                font-size: 14px;
+            }
+            .com-rmb{
+                font-size: 12px;
+            }
+            .com-price{
+                margin-right: 5px;
+                font-size: 16px;
+                font-weight: 700;
+            }
+        }
+    }
+}
+.modalStyle{
+    line-height: 32px !important;
+    :global{
+        .ant-form-item-label{
+            line-height: 32px !important;
+        }
+        .ant-form-item-control{
+            line-height: 32px !important;
+        }
+    }
+}
+.money{
+    font-size: 24px;
+}
